@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuylebronHotel.Web", "HuylebronHotel.Web\HuylebronHotel.Web.csproj", "{1C0E9713-1E16-4CC2-B598-7FCFCC49AA2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuylebronVilla.Web", "HuylebronVilla.Web\HuylebronVilla.Web.csproj", "{1C0E9713-1E16-4CC2-B598-7FCFCC49AA2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuylebronHotel.Domain", "HuylebronHotel.Domain\HuylebronHotel.Domain.csproj", "{1C11095C-D899-446B-A367-E30FB85F2ABC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuylebronVilla.Domain", "HuylebronVilla.Domain\HuylebronVilla.Domain.csproj", "{1C11095C-D899-446B-A367-E30FB85F2ABC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "huylebronHotel.Application", "huylebronHotel.Application\huylebronHotel.Application.csproj", "{156FED9D-6A44-4DD9-812C-0DC89EF94962}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "huylebronVilla.Application", "huylebronVilla.Application\huylebronVilla.Application.csproj", "{156FED9D-6A44-4DD9-812C-0DC89EF94962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuylebronHotel.infrastructure", "HuylebronHotel.infrastructure\HuylebronHotel.infrastructure.csproj", "{648DC52B-9117-4213-960D-FEA28A936CE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuylebronVilla.infrastructure", "HuylebronVilla.infrastructure\HuylebronVilla.infrastructure.csproj", "{648DC52B-9117-4213-960D-FEA28A936CE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
