@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.28" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.25">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HotelProject.Application\HotelProject.Application.csproj" />
+      <ProjectReference Include="..\HotelProject.Domain\HotelProject.Domain.csproj" />
+      <ProjectReference Include="..\HotelProject.Infrastructure\HotelProject.Infrastructure.csproj" />
+      <ProjectReference Include="..\HotelProject.Persistence\HotelProject.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>

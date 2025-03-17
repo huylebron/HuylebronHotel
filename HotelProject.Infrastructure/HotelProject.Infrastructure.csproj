@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.25" />
+        <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.25" />
+        <PackageReference Include="Serilog" Version="3.1.1" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\HotelProject.Application\HotelProject.Application.csproj" />
+      <ProjectReference Include="..\HotelProject.Domain\HotelProject.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
+    
