@@ -8,7 +8,7 @@ public class AdditionalService : DomainEntity<Guid>, IAuditTable
     [Column(TypeName = "nvarchar(500)")]
     public string Name { get; set; } // Tên dịch vụ 
     
-    [Column(TypeName = "ntext")]
+    [Column(TypeName = "nvarchar(500)")]
     public string? Description { get; set; }
     
     [Column(TypeName = "decimal(18,2)")]
