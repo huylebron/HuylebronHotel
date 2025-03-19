@@ -1,0 +1,15 @@
+﻿
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using HotelProject . Domain . Model . Commons ;
+
+namespace HotelProject . Domain . Model .Users
+{
+    public class UserSearchQuery : SearchQuery
+    {
+        public bool IsSystemUser { get; set; }
+    }
+}
