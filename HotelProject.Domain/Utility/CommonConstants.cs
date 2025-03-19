@@ -82,7 +82,7 @@ public static class CommonConstants
         public const string REPORT_PERMISSION = "REPORT_PERMISSION";  // Quyền xem báo cáo
         public const string BOOKING_REPORT_PERMISSION = "BOOKING_REPORT_PERMISSION";  // Xem báo cáo đặt phòng
         public const string REVENUE_REPORT_PERMISSION = "REVENUE_REPORT_PERMISSION";  // Xem báo cáo doanh thu
-        public const string OCCUPANCY_REPORT_PERMISSION = "OCCUPANCY_REPORT_PERMISSION";  
+         
         
     }
 }

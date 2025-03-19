@@ -10,4 +10,4 @@ namespace HotelProject . Domain . Model .Users
     {
         public string RoleName { get; set; }
     }
-}
+}   

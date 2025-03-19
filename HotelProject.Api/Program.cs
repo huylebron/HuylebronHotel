@@ -1,3 +1,4 @@
+using HotelProject . Infrastructure ;
 using HotelProject . Persistence ;
 
 var builder = WebApplication . CreateBuilder ( args ) ;
@@ -16,6 +17,12 @@ builder.Services.AddRepositoryUnitOfWork();
 
 
 #endregion
+#region Infrastructure
+builder.Services.AddServicesInfrastructure();
+builder.Services.Configure<JwtOption>(builder.Configuration.GetSection("JwtOption"));
+#endregion
+
+
 
 
 var app = builder . Build ( ) ;
