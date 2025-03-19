@@ -12,15 +12,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddTransient<IJwtTokenService, JwtTokenService>();
         services.AddTransient<IFileService, FileService>();
-        //.AddSingleton<ICacheService, CacheService>()
+        
     }
 
-    //public static void AddRedisInfrastructure(this IServiceCollection services, IConfiguration configuration)
-    //{
-    //    services.AddStackExchangeRedisCache(redisOptions =>
-    //    {
-    //        var connectionString = configuration["ConnectionStrings:Redis"];
-    //        redisOptions.Configuration = connectionString;
-    //    });
-    //}
 }
