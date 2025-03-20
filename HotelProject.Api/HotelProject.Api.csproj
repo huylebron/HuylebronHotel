@@ -23,4 +23,12 @@
       <ProjectReference Include="..\HotelProject.Persistence\HotelProject.Persistence.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\generalImages\" />
+      <Folder Include="wwwroot\hotelImages\" />
+      <Folder Include="wwwroot\roomImages\" />
+      <Folder Include="wwwroot\roomTypeImages\" />
+      <Folder Include="wwwroot\serviceImages\" />
+    </ItemGroup>
+
 </Project>
