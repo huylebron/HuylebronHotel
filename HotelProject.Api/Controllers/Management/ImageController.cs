@@ -1,21 +1,25 @@
-﻿using HotelProject . Api . Filters ;
-using HotelProject . Domain . Abstractions . ApplicationServices ;
-using HotelProject . Domain . Model . Commons ;
-using HotelProject . Domain . Model . Images ;
-using HotelProject . Domain . Utility ;
-using Microsoft . AspNetCore . Mvc ;
+﻿using HotelProject.Api.Controllers.Bases;
+using HotelProject.Api.Filters;
+using HotelProject.Domain.Abstractions.ApplicationServices;
+using HotelProject.Domain.Model.Commons;
+using HotelProject.Domain.Model.Images;
+using HotelProject.Domain.Utility;
+using Microsoft.AspNetCore.Mvc;
 
-namespace HotelProject.Api.Controllers.Management ;
+namespace HotelProject.Api.Controllers.Management;
 
-public class ImageController : Controller
+[Route("api/[controller]")]
+[ApiController]
+public class ImageController : AuthorizeController
 {
     private readonly IImageService _imageService;
+
     public ImageController(IImageService imageService)
     {
         _imageService = imageService;
     }
 
-    [Permission(CommonConstants.Permissions.ADD_IMAGE_PERMISSION)]
+    // [Permission(CommonConstants.Permissions.ADD_IMAGE_PERMISSION)]
     [HttpPost]
     [Route("upload-images")]
     public async Task<ResponseResult> UploadImages([FromForm] UploadImageViewModel model)
@@ -27,7 +31,7 @@ public class ImageController : Controller
     [Permission(CommonConstants.Permissions.UPDATE_IMAGE_PERMISSION)]
     [HttpPut]
     [Route("update-image")]
-    public async Task<ResponseResult> UpdateImage([FromForm] UpdateImageViewModel model)
+    public async Task<ResponseResult> UpdateImage([FromBody] UpdateImageViewModel model)
     {
         var result = await _imageService.UpdateImage(model);
         return result;
