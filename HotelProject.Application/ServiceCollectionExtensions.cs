@@ -1,4 +1,5 @@
 ﻿using Demo . Application . Services ;
+using HotelProject . Application . Services ;
 using HotelProject . Domain . Abstractions . ApplicationServices ;
 using Microsoft . Extensions . DependencyInjection ;
 
@@ -11,7 +12,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IImageService, ImageService>();
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IHotelService, HotelService>();
-       // services.AddScoped<IRoomTypeService, RoomTypeService>();
+        services.AddScoped<IRoomTypeService, RoomTypeService>();
        // services.AddScoped<IRoomService, RoomService>();
        // services.AddScoped<IAmenityService, AmenityService>();
        // services.AddScoped<IAdditionalServiceService, AdditionalServiceService>();

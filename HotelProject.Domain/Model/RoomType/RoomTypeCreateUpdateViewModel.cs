@@ -4,9 +4,9 @@ namespace HotelProject.Domain.Model.RoomTypeViewModel ;
 
 public class RoomTypeCreateUpdateViewModel
 {
-    
-    
-  
+    public string ? Name { get; set; } 
+
+
     public string? Description { get; set; }
     
     

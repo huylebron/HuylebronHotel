@@ -63,4 +63,5 @@ void InitDatabase(IApplicationBuilder app)
     dbContext.Database.Migrate();
     var userService = serviceScope.ServiceProvider.GetRequiredService<IUserService>();
     userService.InitializeUserAdminAsync().Wait();
+    InitializeTestData.SeedTestData(app).Wait();
 }
