@@ -1,5 +1,6 @@
 ﻿using System . Linq . Expressions ;
 using HotelProject . Domain ;
+using HotelProject . Domain . Entities ;
 using Microsoft . EntityFrameworkCore ;
 
 namespace HotelProject.Persistence ;
@@ -55,6 +56,10 @@ public class GenericRepository<TEntity, TKey> : IGenericRepository<TEntity, TKey
 
     public void RemoveMultiple(List<TEntity> entities)
         => _context.Set<TEntity>().RemoveRange(entities);
+
+    public IQueryable < Booking > FindAll ( Func < Booking , AppUser > includeProperties , Func < Booking , Room > includeProperty , Func < Booking , RoomType > expression , Func < Booking , Hotel > func ) {
+        throw new NotImplementedException ( );
+    }
 
     public void Update(TEntity entity)
         => _context.Set<TEntity>().Update(entity);

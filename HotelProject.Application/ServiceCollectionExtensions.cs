@@ -1,5 +1,6 @@
 ﻿using HotelProject . Application . Services ;
 using HotelProject . Domain . Abstractions . ApplicationServices ;
+using HotelProject . Domain . Entities ;
 using Microsoft . Extensions . DependencyInjection ;
 
 namespace HotelProject.Application ;
@@ -15,7 +16,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IRoomService, RoomService>();
        services.AddScoped<IAmenityService, AmenityService>();
        services.AddScoped<IAdditionalServiceService, AdditionalServiceService>();
-      // services.AddScoped<IBookingService, BookingService>();
+       services.AddScoped<IBookingService, BookingServices>();
         services.AddScoped<IReviewService, ReviewService>();
      //   services.AddScoped<IDashboardService, DashboardService>();
        

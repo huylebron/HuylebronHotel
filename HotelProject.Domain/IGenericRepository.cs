@@ -1,4 +1,5 @@
 ﻿using System . Linq . Expressions ;
+using HotelProject . Domain . Entities ;
 
 namespace HotelProject.Domain ;
 
@@ -18,5 +19,6 @@ public interface IGenericRepository<TEntity, TKey> where TEntity : class
     void Remove(TEntity entity);
 
     void RemoveMultiple(List<TEntity> entities);
-    
+
+    IQueryable < Booking > FindAll ( Func < Booking , AppUser > includeProperties , Func < Booking , Room > includeProperty , Func < Booking , RoomType > expression , Func < Booking , Hotel > func ) ;
 }
