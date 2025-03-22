@@ -8,6 +8,8 @@ using Microsoft . AspNetCore . Mvc ;
 
 namespace HotelProject.Api.Controllers.Management ;
 
+[Route("api/[controller]")]
+[ApiController]
 public class RoomTypeController : AuthorizeController
 {
     

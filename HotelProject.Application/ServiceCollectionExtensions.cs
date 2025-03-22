@@ -12,11 +12,11 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IHotelService, HotelService>();
         services.AddScoped<IRoomTypeService, RoomTypeService>();
-       // services.AddScoped<IRoomService, RoomService>();
-       // services.AddScoped<IAmenityService, AmenityService>();
-       // services.AddScoped<IAdditionalServiceService, AdditionalServiceService>();
+        services.AddScoped<IRoomService, RoomService>();
+       services.AddScoped<IAmenityService, AmenityService>();
+       services.AddScoped<IAdditionalServiceService, AdditionalServiceService>();
      //   services.AddScoped<IBookingService, BookingService>();
-      //  services.AddScoped<IReviewService, ReviewService>();
+        services.AddScoped<IReviewService, ReviewService>();
      //   services.AddScoped<IDashboardService, DashboardService>();
        
     }
