@@ -15,7 +15,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IRoomService, RoomService>();
        services.AddScoped<IAmenityService, AmenityService>();
        services.AddScoped<IAdditionalServiceService, AdditionalServiceService>();
-     //   services.AddScoped<IBookingService, BookingService>();
+      // services.AddScoped<IBookingService, BookingService>();
         services.AddScoped<IReviewService, ReviewService>();
      //   services.AddScoped<IDashboardService, DashboardService>();
        

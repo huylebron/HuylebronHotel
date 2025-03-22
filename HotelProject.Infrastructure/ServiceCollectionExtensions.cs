@@ -12,6 +12,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddTransient<IJwtTokenService, JwtTokenService>();
         services.AddTransient<IFileService, FileService>();
+       
         
     }
 
