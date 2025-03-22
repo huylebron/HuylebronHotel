@@ -1,11 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Identity;
-using System.Security.Claims;
-
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
-using Microsoft.Extensions.Configuration;
-using System.Data;
+﻿using System . Security . Claims ;
 using HotelProject . Domain ;
 using HotelProject . Domain . Abstractions . ApplicationServices ;
 using HotelProject . Domain . Abstractions . InfrastructureServices ;
@@ -14,8 +7,12 @@ using HotelProject . Domain . Exception ;
 using HotelProject . Domain . Model . Commons ;
 using HotelProject . Domain . Model . Users ;
 using HotelProject . Domain . Utility ;
+using Microsoft . AspNetCore . Identity ;
+using Microsoft . EntityFrameworkCore ;
+using Microsoft . Extensions . Configuration ;
+using Newtonsoft . Json ;
 
-namespace Demo.Application.Services
+namespace HotelProject . Application .Services
 {
     public class UserService : IUserService
     {

@@ -1,5 +1,4 @@
-﻿using Demo . Application . Services ;
-using HotelProject . Application . Services ;
+﻿using HotelProject . Application . Services ;
 using HotelProject . Domain . Abstractions . ApplicationServices ;
 using Microsoft . Extensions . DependencyInjection ;
 

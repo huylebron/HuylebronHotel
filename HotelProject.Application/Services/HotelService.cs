@@ -13,7 +13,7 @@ using Microsoft . EntityFrameworkCore ;
 using Microsoft . Extensions . Logging ;
 using Newtonsoft . Json ;
 
-namespace Demo.Application.Services ;
+namespace HotelProject . Application .Services ;
 
 public class HotelService : IHotelService
 {

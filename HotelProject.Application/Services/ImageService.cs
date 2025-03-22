@@ -1,16 +1,16 @@
-﻿using HotelProject.Domain;
-using HotelProject.Domain.Abstractions.ApplicationServices;
-using HotelProject.Domain.Abstractions.InfrastructureServices;
-using HotelProject.Domain.Entities;
-using HotelProject.Domain.Enum;
-using HotelProject.Domain.Exception;
-using HotelProject.Domain.Model.Commons;
-using HotelProject.Domain.Model.Images;
-using HotelProject.Domain.Model.Users;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
+﻿using HotelProject . Domain ;
+using HotelProject . Domain . Abstractions . ApplicationServices ;
+using HotelProject . Domain . Abstractions . InfrastructureServices ;
+using HotelProject . Domain . Entities ;
+using HotelProject . Domain . Enum ;
+using HotelProject . Domain . Exception ;
+using HotelProject . Domain . Model . Commons ;
+using HotelProject . Domain . Model . Images ;
+using HotelProject . Domain . Model . Users ;
+using Microsoft . EntityFrameworkCore ;
+using Microsoft . Extensions . Logging ;
 
-namespace Demo.Application.Services;
+namespace HotelProject . Application .Services;
 
 public class ImageService : IImageService
 {
