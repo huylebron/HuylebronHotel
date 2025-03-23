@@ -445,12 +445,12 @@ public class BookingServices : IBookingService
                 break ;
         }
 
-        // Bước 4: Cập nhật trạng thái thanh toán
+        //Cập nhật payment status
         if ( paymentSuccess )
         {
             await _unitOfWork . BeginTransactionAsync ( ) ;
 
-            // Cập nhật trạng thái thanh toán dựa trên phương thức
+            // Cập nhật trạng thái thanh toán
             booking . PaymentMethod = model . PaymentMethod ;
             booking . PaymentStatus = model . PaymentMethod == PaymentMethod . CreditCard
                 ? PaymentStatus . Paid
@@ -463,7 +463,7 @@ public class BookingServices : IBookingService
             await _unitOfWork . CommitAsync ( ) ;
         }
 
-        // Bước 5: Trả về kết quả
+   
         return ResponseResult . Success ( message ) ;
     }
 }

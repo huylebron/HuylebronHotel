@@ -11,11 +11,11 @@ public class InitializeTestData
         using var serviceScope = app . ApplicationServices . GetService < IServiceScopeFactory > ( ) . CreateScope ( ) ;
         var dbContext = serviceScope . ServiceProvider . GetRequiredService < ApplicationDbContext > ( ) ;
 
-        // Kiểm tra xem đã có dữ liệu chưa
+        
         if ( await dbContext . Hotels . AnyAsync ( ) )
             return ;
 
-        // 1. Tạo khách sạn mẫu
+      
         var hotels = new List < Hotel >
         {
             new Hotel

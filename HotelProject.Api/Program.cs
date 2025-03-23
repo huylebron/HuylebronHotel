@@ -55,6 +55,38 @@ app.UseAuthentication();
 
 app . MapControllers ( ) ;
 InitDatabase(app);
+EnsureDirectoriesExist(app);
+void EnsureDirectoriesExist(IApplicationBuilder appBuilder)
+{
+    var webHostEnvironment = appBuilder.ApplicationServices.GetRequiredService<IWebHostEnvironment>();
+    var webRootPath = webHostEnvironment.WebRootPath;
+    
+    // Tạo wwwroot nếu không tồn tại
+    if (string.IsNullOrEmpty(webRootPath))
+    {
+        webRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+        Directory.CreateDirectory(webRootPath);
+    }
+    
+    // Tạo các thư mục con
+    var directories = new[]
+    {
+        Path.Combine(webRootPath, "generalImages"),
+        Path.Combine(webRootPath, "hotelImages"),
+        Path.Combine(webRootPath, "roomImages"),
+        Path.Combine(webRootPath, "roomTypeImages"),
+        Path.Combine(webRootPath, "serviceImages")
+    };
+    
+    foreach (var directory in directories)
+    {
+        if (!Directory.Exists(directory))
+        {
+            Directory.CreateDirectory(directory);
+        }
+    }
+}
+
 app . Run ( ) ;
 void InitDatabase(IApplicationBuilder app)
 {
